@@ -52,7 +52,7 @@ O corpo da resposta de uma requisição chega em formato de bytes. Desta forma o
 
 
 ### callback hell.
-Quando produzimos um código assíncrono com o uso do .then nós fazemos uso de callback dentro deles.
+ Quando produzimos um código assíncrono com o uso do .then nós fazemos uso de callback dentro deles.
  O maior problema com callbacks é que eles não são bem dimensionados mesmo para códigos assíncronos moderadamente complexos, onde temos vários .then em seguida do outro. O código resultante geralmente se torna difícil de ler, fácil de quebrar e difícil de depurar.
  Para resolver isso, foi desenvolvido outra forma de construir um código assíncrono: o async await, que funciona de forma semelhante ao then, trazendo mais nitidez de codigo eliminando suas linhas dee callback hell ,   é o que chamamos de syntax sugar.
 
@@ -62,4 +62,9 @@ Quando produzimos um código assíncrono com o uso do .then nós fazemos uso de 
  o async/await faz o processamento de forma sequencial, Promises com .then() são processadas em paralelo, o que faz com que este método seja mais rápido.
  a partir da versão 10 do Node.js, ambas as formas são equivalentes em termos de performance.
  O async/await simplifica a escrita e a interpretação do código, mas não é tão flexível e só funciona com uma Promise por vez.
+# vimos
+- funções assíncronas com async;
+- requisições com await;
+- Tratar erros com try catch;
+- Implementar requisições simultaneamente com Promise All.
 
