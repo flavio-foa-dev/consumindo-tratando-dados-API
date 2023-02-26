@@ -36,7 +36,6 @@
 
 .formulario__campo {
     margin: .6em 3em .6em 0;
-
 }
 
 .formulario__dupla {
@@ -49,6 +48,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
+    border-radius: 24px;
     border: none;
     color: var(--branco);
     cursor: pointer;
@@ -71,6 +71,13 @@
 }
 
 .erro__texto {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--vermelho);
+}
+
+.erro_cep{
+    margin-top:5px;
     font-size: 12px;
     line-height: 18px;
     color: var(--vermelho);
