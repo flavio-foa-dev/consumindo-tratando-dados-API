@@ -67,4 +67,8 @@ O corpo da resposta de uma requisição chega em formato de bytes. Desta forma o
 - requisições com await;
 - Tratar erros com try catch;
 - Implementar requisições simultaneamente com Promise All.
+- Selecionar elementos pelo seu id através do getElementById;
+- Incluir valores em elementos com a propriedade value;
+- Detectar interação do usuário com auxílio do addEventListener;
+- Inserir elementos HTML a partir do innerHTML.
 
