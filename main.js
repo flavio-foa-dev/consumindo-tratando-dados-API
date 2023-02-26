@@ -7,6 +7,7 @@ const erro = document.querySelector('#error');
 
 async function getAdress(cep) {
   try {
+    erro.innerHTML = '';
     const apiViaCep = `https://viacep.com.br/ws/${cep}/json/`;
     const result = await fetch(apiViaCep);
     const parsed = await result.json();
@@ -18,7 +19,7 @@ async function getAdress(cep) {
   } catch (error) {
     if (error.name === 'TypeError') {
       erro.innerHTML = '<p>Digite um CEP valido com 8 dígitos sem traços e pontos!</p>';
-    }else {
+    }else  {
       erro.innerHTML = `<p>${error.message}</p>`;
     }
   }
